@@ -1,0 +1,18 @@
+# Local environment variables
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Local Codex configuration
+.codex/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*~
