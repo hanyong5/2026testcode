@@ -32,7 +32,8 @@ Todo CRUD, 완료 상태, 필터 및 LocalStorage 저장·복원은 아직 구�
 ├── css/
 │   └── style.css
 ├── js/
-│   └── script.js
+│   ├── app.js
+│   └── script.js  # 기존 경로 호환용
 ├── index.html
 ├── .gitignore
 ├── AGENTS.md
@@ -64,9 +65,9 @@ python3 -m http.server 8000 --bind 127.0.0.1
 
 초기 환경 확인 절차:
 
-1. 개발자 도구의 Network에서 HTML, `css/style.css`, `js/script.js` 로딩을 확인합니다.
+1. 개발자 도구의 Network에서 HTML, `css/style.css`, `js/app.js` 로딩을 확인합니다.
 2. Console에서 `test` 출력과 오류 유무를 확인합니다.
-3. JavaScript 문법은 `node --check js/script.js`로 추가 확인할 수 있습니다. Node.js는 앱 실행 필수 요건이 아닙니다.
+3. JavaScript 문법은 `node --check js/app.js`로 추가 확인할 수 있습니다. Node.js는 앱 실행 필수 요건이 아닙니다.
 
 기능 구현 후에는 CRUD, 완료 전환, 필터, 새로고침 후 데이터 복원 및 예외 상황을 검증합니다.
 
