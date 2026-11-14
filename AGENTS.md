@@ -5,7 +5,7 @@
 ## 프로젝트와 범위
 
 - HTML5, CSS3, Vanilla JavaScript, LocalStorage 기반 Todo List입니다.
-- 화면 진입점은 `index.html`, 스타일은 `css/style.css`, 스크립트는 `js/script.js`입니다.
+- 화면 진입점은 `index.html`, 스타일은 `css/style.css`, 스크립트는 `js/app.js`입니다.
 - 프레임워크나 빌드 도구는 작업에 필요한 경우에만 도입하고 이유를 설명합니다.
 - 요청한 Issue 범위만 작업합니다. 환경 설정 작업에서 Todo CRUD를 구현하지 않습니다.
 
@@ -30,7 +30,7 @@
 http://127.0.0.1:8000 에서 확인합니다. 서버 루트에 민감한 파일을 두지 않습니다.
 
 - HTML·CSS·JS 리소스 로딩과 브라우저 콘솔 오류를 확인합니다.
-- JavaScript 변경 시 필요에 따라 `node --check js/script.js`로 문법을 확인합니다.
+- JavaScript 변경 시 필요에 따라 `node --check js/app.js`로 문법을 확인합니다.
 - 기능 변경 시 정상·경계·예외 입력, 기존 기능 영향과 LocalStorage 복원을 확인합니다.
 - UI 변경 시 모바일·데스크톱 화면과 키보드 조작을 확인합니다.
 - 실행하지 못한 검증을 성공했다고 기록하지 않습니다.
@@ -56,3 +56,71 @@ http://127.0.0.1:8000 에서 확인합니다. 서버 루트에 민감한 파일�
 
 변경 파일, 검증 결과, 미완료 항목과 제약을 간결하게 보고합니다.
 원격 변경을 수행한 경우 가능한 범위에서 재조회하고 Issue·PR·브랜치 링크를 제공합니다.
+
+## GitHub Issue Automation Rules
+
+### 1. Issue Verification
+
+- Read the target Issue using GitHub MCP.
+- Review its description, checklist, and acceptance criteria.
+- Check the current local Git state.
+- Check existing branches, commits, and Pull Requests.
+- Never duplicate completed work.
+
+### 2. Completed Issue Handling
+
+If all acceptance criteria are satisfied:
+
+- Skip unnecessary implementation.
+- Update only verified checklist items.
+- Verify the related PR and merge status.
+- Close the Issue only when completion is confirmed.
+- Update GitHub Project status to Done when supported.
+- Proceed to the next Issue in the planned sequence.
+
+### 3. Incomplete Issue Handling
+
+If an Issue is incomplete:
+
+- Work only on missing requirements.
+- Create or reuse an Issue-specific branch.
+- Preserve existing files and changes.
+- Implement the required changes locally.
+- Run relevant tests.
+- Update verified checklist items.
+- Commit and push changes.
+- Create a Pull Request.
+- Never merge without user approval.
+
+### 4. GitHub Workflow
+
+- Prefer GitHub MCP for supported operations.
+- Do not create duplicate Issues, branches, or PRs.
+- Use Conventional Commits.
+- Include `Closes #N` in PR descriptions.
+- Never force-push or delete branches without approval.
+- Never overwrite uncommitted changes.
+
+### 5. Sequential Issue Execution
+
+- Process Issues in the specified order.
+- Skip implementation for already completed Issues.
+- Proceed automatically only when the previous Issue
+  is fully verified and completed.
+- Stop when a PR requires approval or merge.
+- Do not assume Issue numbers always represent
+  development priority.
+
+### 6. Reporting
+
+For each Issue, report:
+
+- Issue number and title
+- Completion status
+- Branch name
+- Changed files
+- Test results
+- Updated checklist items
+- Commit hash
+- Pull Request URL
+- Remaining work or blockers
