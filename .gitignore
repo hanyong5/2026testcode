@@ -1,0 +1,21 @@
+# Local environment variables
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Local Codex settings
+.codex/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*~
