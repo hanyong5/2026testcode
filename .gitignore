@@ -4,12 +4,15 @@
 !.env.example
 !.env.sample
 
-# Local Codex configuration
+# Local Codex settings
 .codex/
 
 # Operating system files
 .DS_Store
 Thumbs.db
+
+# Dependencies
+node_modules/
 
 # Logs and temporary files
 *.log
