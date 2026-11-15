@@ -1,0 +1,4 @@
+interface:
+  display_name: "Data Modeling"
+  short_description: "Todo 데이터 모델·JSON Schema·저장 및 복구 정책을 설계"
+  default_prompt: "$data-modeling을 사용해 현재 Issue의 데이터 모델과 JSON Schema, LocalStorage 저장·복구 정책 및 Mermaid 다이어그램을 설계해 줘."
