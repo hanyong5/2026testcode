@@ -60,6 +60,7 @@ http://127.0.0.1:8000 에서 확인합니다. 서버 루트에 민감한 파일�
 ## 프로젝트 로컬 스킬
 
 - 요구사항 분석·정의·검토를 요청받으면 [Requirements Analysis](.agents/skills/requirements-analysis/SKILL.md)를 읽고 적용합니다.
+- 데이터 모델·JSON Schema·LocalStorage 저장 구조 설계에는 [Data Modeling](.agents/skills/data-modeling/SKILL.md)를 읽고 적용합니다.
 
 ## GitHub Issue Automation Rules
 

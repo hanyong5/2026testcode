@@ -15,6 +15,8 @@ Todo CRUD, 완료 상태, 필터 및 LocalStorage 저장·복원은 아직 구�
 필수 기능, 제외 범위와 요구사항별 수용 기준은 [기능 요구사항 문서](docs/requirements.md)에 정리합니다.
 Issue #5의 요구사항 정의 산출물이며, 기능 구현 완료를 의미하지 않습니다.
 
+LocalStorage의 필드·JSON Schema·저장 및 복구 정책은 [데이터 모델 설계](docs/data-model.md)에서 확인합니다.
+
 ## 기술 스택
 
 - HTML5: 시맨틱 화면 구조
