@@ -1,0 +1,4 @@
+interface:
+  display_name: "Requirements Analysis"
+  short_description: "프로젝트 요구사항과 수용 기준을 정의하고 누락·충돌·범위를 검토"
+  default_prompt: "$requirements-analysis를 사용해 현재 Issue의 요구사항과 수용 기준을 검토하고, 확정 사항·가정·미해결 질문을 구분해 문서를 작성해 줘."
