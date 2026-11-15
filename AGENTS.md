@@ -57,6 +57,10 @@ http://127.0.0.1:8000 에서 확인합니다. 서버 루트에 민감한 파일�
 변경 파일, 검증 결과, 미완료 항목과 제약을 간결하게 보고합니다.
 원격 변경을 수행한 경우 가능한 범위에서 재조회하고 Issue·PR·브랜치 링크를 제공합니다.
 
+## 프로젝트 로컬 스킬
+
+- 요구사항 분석·정의·검토를 요청받으면 [Requirements Analysis](.agents/skills/requirements-analysis/SKILL.md)를 읽고 적용합니다.
+
 ## GitHub Issue Automation Rules
 
 ### 1. Issue Verification
